@@ -28,5 +28,4 @@ export function element(strings, ...values){
 export function render(bodyElement, containerElement){
   containerElement.innerHTML="";
   containerElement.appendChild(bodyElement);
-  console.log(bodyElement);
 }
