@@ -3,15 +3,15 @@ import {TodoItemView} from "./TodoItemView.js";
 
 export class TodoListView{
   createElement(todoItems, {onUpdateTodo,onDeleteTodo}){
-    const todolistElement=element`<ul />`;
+    const todoListElement=element`<ul />`;
     todoItems.forEach(todoItem=>{
       const todoItemView=new TodoItemView();
       const todoItemElement=todoItemView.createElement(todoItem,{
         onDeleteTodo,
         onUpdateTodo
       });
-      todolistElement.appendChild(todoItemElement);
+      todoListElement.appendChild(todoItemElement);
     });
-    return todolistElement;
+    return todoListElement;
   }
 }
